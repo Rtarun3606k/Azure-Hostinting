@@ -8,11 +8,11 @@ def home():
     return jsonify({'message': 'Hello World!'})
 
 @app.route('/about')
-def home():
+def service():
     return render_template('home.html')
 
 @app.route('/service')
-def home():
+def about():
     return jsonify({'message': 'service World!'})
 
 # if __name__ == '__main__':
