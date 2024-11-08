@@ -7,5 +7,13 @@ app = Flask(__name__)
 def home():
     return jsonify({'message': 'Hello World!'})
 
+@app.route('/about')
+def home():
+    return render_template('home.html')
+
+@app.route('/service')
+def home():
+    return jsonify({'message': 'service World!'})
+
 # if __name__ == '__main__':
 #     app.run(debug=False , port=8080, host='0.0.0.0')
